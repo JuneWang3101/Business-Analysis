@@ -17,4 +17,4 @@ plot(mydataframe1$Profit,mydataframe1$Stockholders..Equity,
      main = "Basic Scatter plor of SHE vs Profit",
      ylab = "Stockholders' Equity ",xlab = "Profit",pch = 19)
 abline(lm(mydataframe1$Stockholders..Equity~mydataframe1$Profit),col="red",lwd = 2 ,lty =1)
-lines(lowess(mydataframe1$Stockholders..Equity~mydataframe1$Profit),col="blue",lwd = 2 ,lty =2)
+lines(lowess(mydataframe1$Profit,mydataframe1$Stockholders..Equity),col="blue",lwd = 2 ,lty =2)
